@@ -32,7 +32,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.vbguest.no_remote = true
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
   config.vm.provision :shell, path: "bootstrap.sh"
-  # config.vm.provision :shell, privileged: true, path: "install-mysql-apache-php-drupal7.sh"
 end
 
 # vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
